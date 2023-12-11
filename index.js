@@ -107,11 +107,11 @@ for (let i = 0; i < finances.length; i++) {
     netChange = netChange + difference
   if (difference > greatestChange [1]) {
     greatestChange = [date, difference]
-    console.log (greatestChange)
+    // console.log (greatestChange)
   }
   if (difference < leastChange [1]) {
     leastChange = [date, difference]
-    console.log (leastChange)
+    // console.log (leastChange)
   }
 }
 
@@ -120,6 +120,7 @@ for (let i = 0; i < finances.length; i++) {
 let totalMonths = finances.length
 // console.log (totalMonths)
 // console.log (netChange)
+
 let averageDeposit = Math.round (netChange / (totalMonths - 1) * 100) / 100
 // console.log (averageDeposit)
 
