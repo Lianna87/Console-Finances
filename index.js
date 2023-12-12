@@ -88,6 +88,21 @@ let finances = [
 ];
 
 
+// Calculate the following:
+
+  // The total number of months included in the dataset.
+
+  // The net total amount of Profit/Losses over the entire period.
+
+// Track the total change in Profit/Losses from month to month and then find the average of the changes over the entire period.
+
+// Then Calculate: 
+
+// The greatest increase in Profit/Losses (date and amount) over the entire period.
+
+// The greatest decrease in Profit/Losses (date and amount) over the entire period.
+
+
 // Variables:
 let totalDeposits = 0
 let difference = 0
@@ -96,7 +111,7 @@ let netChange = 0
 let greatestChange = ["", 0]
 let leastChange = ["", 999999999]
 
-// For loop to find difference from month to month
+
 for (let i = 0; i < finances.length; i++) {
   let date = finances [i][0]
   let monthlyTotal = finances [i][1]
@@ -115,8 +130,8 @@ for (let i = 0; i < finances.length; i++) {
     // console.log (leastChange)
   }
 }
-
 // console.log (totalDeposits)
+
 
 let totalMonths = finances.length
 // console.log (totalMonths)
