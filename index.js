@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
   ['Mar-2010', 322013],
@@ -96,6 +96,7 @@ let netChange = 0
 let greatestChange = ["", 0]
 let leastChange = ["", 999999999]
 
+// For loop to find difference from month to month
 for (let i = 0; i < finances.length; i++) {
   let date = finances [i][0]
   let monthlyTotal = finances [i][1]
